@@ -60,6 +60,7 @@ require 'erb'
 require 'yaml'
 
 group :development, :test do
+  gem 'pg'
   gem 'sqlite3'
 end
 
