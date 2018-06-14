@@ -60,12 +60,11 @@ require 'erb'
 require 'yaml'
 
 group :development, :test do
-  gem 'pg'
   gem 'sqlite3'
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.20'
   gem 'rails_12factor'
   gem 'thin' # change this if you want to use other rack web server
 end
